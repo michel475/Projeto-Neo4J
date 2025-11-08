@@ -1,0 +1,78 @@
+CREATE 
+(p1:Usuario {nome: 'Bernardo'}),
+(p2:Usuario {nome: 'Eddard'}),
+(p3:Usuario {nome: 'Hugo Christian'}),
+(p4:Usuario {nome: 'Luke Ellis'}),
+(p5:Usuario {nome: 'Lenina Crowe'}),
+(p6:Usuario {nome: 'Arya Stark'}),
+(p7:Usuario {nome: 'Mary Angela'}),
+(p8:Usuario {nome: 'Bruce Dickinson'}),
+(p9:Usuario {nome: 'Jonathan Davis'}),
+(p10:Usuario {nome: 'Thom Yorke'});
+
+CREATE
+(f1:Filme {titulo: 'A Origem'}),
+(f2:Filme {titulo: 'O Senhor Dos Anéis: A Sociedade do Anel'}),
+(f3:Filme {titulo: 'Se7en - Os Sete Crimes Capitais'}),
+(f4:Filme {titulo: 'Doutor Estranho no Multiverso da Loucura'}),
+(f5:Filme {titulo: 'O Abutre'}),
+(f6:Filme {titulo: 'O Silêncio dos Inocentes'}),
+(f7:Filme {titulo: 'Pulp Fiction'}),
+(f8:Filme {titulo: 'O Sexto Sentido'}),
+(f9:Filme {titulo: 'The Matrix'}),
+(f10:Filme {titulo: 'American Beauty'});
+
+CREATE
+(s1:Serie {titulo: 'Game of Thrones'}),
+(s2:Serie {titulo: 'The Walking Dead'}),
+(s3:Serie {titulo: 'Friends'}),
+(s4:Serie {titulo: 'Reacher'}),
+(s5:Serie {titulo: 'Fallout'}),
+(s6:Serie {titulo: 'Sherlock'}),
+(s7:Serie {titulo: 'The Mandalorian'}),
+(s8:Serie {titulo: 'Stranger Things'}),
+(s9:Serie {titulo: 'Sandman'}),
+(s10:Serie {titulo: 'Supernatural'});
+
+CREATE
+(a1:Ator {nome: 'Jake Gyllenhaal'}),
+(a2:Ator {nome: 'Bruce Willis'}),
+(a3:Ator {nome: 'Brad Pitt'}),
+(a4:Ator {nome: 'Kevin Spacey'}),
+(a5:Ator {nome: 'Anthony Hopkins'}),
+(a6:Ator {nome: 'Jodie Foster'}),
+(a7:Ator {nome: 'Leonardo Dicaprio'}),
+(a8:Ator {nome: 'Ian McKellen'}),
+(a9:Ator {nome: 'Keanu Reeves'}),
+(a10:Ator {nome: 'Carrie-Anne Moss'})
+(a11:Ator {nome: 'Benedict Cumberbatch'});
+
+CREATE
+(d1:Diretor {nome: 'Quentin Tarantino'}),
+(d2:Diretor {nome: 'David Fincher'}),
+(d3:Diretor {nome: 'Lilly Wachowski'}),
+(d4:Diretor {nome: 'Sam Mendes'}),
+(d5:Diretor {nome: 'Christopher Nolan'}),
+(d6:Diretor {nome: 'Peter Jackson'}),
+(d7:Diretor {nome: 'Dan Gilroy'}),
+(d8:Diretor {nome: 'M. Night Shyamalan'}),
+(d9:Diretor {nome: 'Jonathan Demme'}),
+(d10:Diretor {nome: 'Sam Raimi'});
+
+CREATE
+(g1:Genero {nome: 'Ficção Científica'}),
+(g2:Genero {nome: 'Suspense'}),
+(g3:Genero {nome: 'Fantasia Heróica'}),
+(g4:Genero {nome: 'Terror'}),
+(g5:Genero {nome: 'Romance'});
+
+CREATE
+(a12:Ator {nome: 'Jensen Ackles'}),
+(a13:Ator {nome: 'Tom Sturridge'}),
+(a14:Ator {nome: 'Millie Bobby Brown'}),
+(a15:Ator {nome: 'Pedro Pascal'}),
+(a16:Ator {nome: 'Ella Purnell'}),
+(a17:Ator {nome: 'Alan Ritchson'}),
+(a18:Ator {nome: 'Jennifer Aniston'}),
+(a19:Ator {nome: 'Norman Reedus'}),
+(a20:Ator {nome: 'Emilia Clarke'});
