@@ -1,0 +1,212 @@
+MATCH (a:Ator {nome: 'Kevin Spacey'}), (f:Filme {titulo: 'American Beauty'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Kevin Spacey'}), (f:Filme {titulo: 'Se7en - Os Sete Crimes Capitais'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Bruce Willis'}), (f:Filme {titulo: 'Pulp Fiction'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Bruce Willis'}), (f:Filme {titulo: 'O Sexto Sentido'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Keanu Reeves'}), (f:Filme {titulo: 'The Matrix'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Carrie-Anne Moss'}), (f:Filme {titulo: 'The Matrix'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Ian McKellen'}), (f:Filme {titulo: 'O Senhor Dos Anéis: A Sociedade do Anel'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Jake Gyllenhaal'}), (f:Filme {titulo: 'O Abutre'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Benedict Cumberbatch'}), (f:Filme {titulo: 'Doutor Estranho no Multiverso da Loucura'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Leonardo Dicaprio'}), (f:Filme {titulo: 'A Origem'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Anthony Hopkins'}), (f:Filme {titulo: 'O Silêncio dos Inocentes'})
+MERGE (a)-[:ATUOU_EM]->(f);
+
+MATCH (a:Ator {nome: 'Jensen Ackles'}), (s:Serie {titulo: 'Supernatural'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Tom Sturridge'}), (s:Serie {titulo: 'Sandman'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Millie Bobby Brown'}), (s:Serie {titulo: 'Stranger Things'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Pedro Pascal'}), (s:Serie {titulo: 'The Mandalorian'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Benedict Cumberbatch'}), (s:Serie {titulo: 'Sherlock'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Ella Purnell'}), (s:Serie {titulo: 'Fallout'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Alan Ritchson'}), (s:Serie {titulo: 'Reacher'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Jennifer Aniston'}), (s:Serie {titulo: 'Friends'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Norman Reedus'}), (s:Serie {titulo: 'The Walking Dead'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Emilia Clarke'}), (s:Serie {titulo: 'Game of Thrones'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+MATCH (a:Ator {nome: 'Pedro Pascal'}), (s:Serie {titulo: 'Game of Thrones'}) 
+MERGE (a)-[:ATUOU_EM]->(s);
+
+
+MATCH (d:Diretor {nome: 'Sam Mendes'}), (f:Filme {titulo: 'American Beauty'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Lilly Wachowski'}), (f:Filme {titulo: 'The Matrix'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'M. Night Shyamalan'}), (f:Filme {titulo: 'O Sexto Sentido'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Quentin Tarantino'}), (f:Filme {titulo: 'Pulp Fiction'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Jonathan Demme'}), (f:Filme {titulo: 'O Silêncio dos Inocentes'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Dan Gilroy'}), (f:Filme {titulo: 'O Abutre'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Sam Raimi'}), (f:Filme {titulo: 'Doutor Estranho no Multiverso da Loucura'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'David Fincher'}), (f:Filme {titulo: 'Se7en - Os Sete Crimes Capitais'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Peter Jackson'}), (f:Filme {titulo: 'O Senhor Dos Anéis: A Sociedade do Anel'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (d:Diretor {nome: 'Christopher Nolan'}), (f:Filme {titulo: 'A Origem'}) 
+MERGE (d)-[:DIRIGIU]->(f);
+
+MATCH (u:Usuario {nome: 'Thom Yorke'}), (f:Filme {titulo: 'A Origem'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 9}]->(f);
+
+MATCH (u:Usuario {nome: 'Thom Yorke'}), (s:Serie {titulo: 'Supernatural'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 5}]->(s);
+
+MATCH (u:Usuario {nome: 'Jonathan Davis'}), (f:Filme {titulo: 'The Matrix'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 10}]->(f);
+
+MATCH (u:Usuario {nome: 'Jonathan Davis'}), (s:Serie {titulo: 'Sandman'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 8}]->(s);
+
+MATCH (u:Usuario {nome: 'Bruce Dickinson'}), (f:Filme {titulo: 'Pulp Fiction'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 7}]->(f);
+
+MATCH (u:Usuario {nome: 'Bruce Dickinson'}), (s:Serie {titulo: 'Stranger Things'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 10}]->(s);
+
+MATCH (u:Usuario {nome: 'Mary Angela'}), (f:Filme {titulo: 'O Sexto Sentido'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 4}]->(f);
+
+MATCH (u:Usuario {nome: 'Mary Angela'}), (s:Serie {titulo: 'The Mandalorian'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 6}]->(s);
+
+MATCH (u:Usuario {nome: 'Arya Stark'}), (f:Filme {titulo: 'O Senhor Dos Anéis: A Sociedade do Anel'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 9}]->(f);
+
+MATCH (u:Usuario {nome: 'Arya Stark'}), (s:Serie {titulo: 'Game of Thrones'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 7}]->(s);
+
+MATCH (u:Usuario {nome: 'Lenina Crowe'}), (f:Filme {titulo: 'O Silêncio dos Inocentes'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 5}]->(f);
+
+MATCH (u:Usuario {nome: 'Lenina Crowe'}), (s:Serie {titulo: 'Sherlock'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 3}]->(s);
+
+MATCH (u:Usuario {nome: 'Luke Ellis'}), (f:Filme {titulo: 'Se7en - Os Sete Crimes Capitais'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 8}]->(f);
+
+MATCH (u:Usuario {nome: 'Luke Ellis'}), (s:Serie {titulo: 'Fallout'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 9}]->(s);
+
+MATCH (u:Usuario {nome: 'Hugo Christian'}), (f:Filme {titulo: 'American Beauty'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 6}]->(f);
+
+MATCH (u:Usuario {nome: 'Hugo Christian'}), (s:Serie {titulo: 'Reacher'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 5}]->(s);
+
+MATCH (u:Usuario {nome: 'Eddard'}), (f:Filme {titulo: 'Doutor Estranho no Multiverso da Loucura'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 10}]->(f);
+
+MATCH (u:Usuario {nome: 'Eddard'}), (s:Serie {titulo: 'Friends'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 8}]->(s);
+
+MATCH (u:Usuario {nome: 'Bernardo'}), (f:Filme {titulo: 'O Abutre'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 7}]->(f);
+
+MATCH (u:Usuario {nome: 'Bernardo'}), (s:Serie {titulo: 'The Walking Dead'}) 
+MERGE (u)-[:ASSISTIU {avaliacao: 6}]->(s);
+
+MATCH (f:Filme {titulo: 'American Beauty'}), (g:Genero {nome: 'Suspense'}) 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'The Matrix'}), (g:Genero {nome: 'Ficção Científica'}) 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'O Sexto Sentido'}), (g:Genero) WHERE g.nome IN ['Suspense', 'Terror'] 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'Pulp Fiction'}), (g:Genero {nome: 'Suspense'}) 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'O Silêncio dos Inocentes'}), (g:Genero) WHERE g.nome IN ['Suspense', 'Terror'] 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'O Abutre'}), (g:Genero {nome: 'Suspense'}) 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'Doutor Estranho no Multiverso da Loucura'}), (g:Genero) WHERE g.nome IN ['Terror', 'Fantasia Heróica'] 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'Se7en - Os Sete Crimes Capitais'}), (g:Genero) WHERE g.nome IN ['Suspense', 'Terror'] 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'O Senhor Dos Anéis: A Sociedade do Anel'}), (g:Genero {nome: 'Fantasia Heróica'}) 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (f:Filme {titulo: 'A Origem'}), (g:Genero) WHERE g.nome IN ['Suspense', 'Ficção Científica'] 
+MERGE (f)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'Supernatural'}), (g:Genero) WHERE g.nome IN ['Terror', 'Fantasia Heróica'] 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie) WHERE s.titulo IN ['Sandman', 'Game of Thrones'] 
+MATCH (g:Genero {nome: 'Fantasia Heróica'}) 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'Stranger Things'}), (g:Genero) WHERE g.nome IN ['Terror', 'Ficção Científica'] 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'The Mandalorian'}), (g:Genero) WHERE g.nome IN ['Ficção Científica', 'Fantasia Heróica'] 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie) WHERE s.titulo IN ['Sherlock', 'Reacher'] 
+MATCH (g:Genero {nome: 'Suspense'}) 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'Fallout'}), (g:Genero {nome: 'Ficção Científica'}) 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'Friends'}), (g:Genero {nome: 'Romance'}) 
+MERGE (s)-[:TEM_GENERO]->(g);
+
+MATCH (s:Serie {titulo: 'The Walking Dead'}), (g:Genero {nome: 'Terror'}) 
+MERGE (s)-[:TEM_GENERO]->(g);
