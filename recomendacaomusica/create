@@ -1,0 +1,43 @@
+CREATE
+(u1:Usuario {idUser: 1, nome: 'Alan Turing'}),
+(u2:Usuario {idUser: 2, nome: 'Bill Cypher'}),
+(u3:Usuario {idUser: 3, nome: 'Hillary'}),
+(u4:Usuario {idUser: 4, nome: 'Josh'}),
+(u5:Usuario {idUser: 5, nome: 'Eddard Stark'}),
+(u6:Usuario {idUser: 6, nome: 'Jon Snow'}),
+(u7:Usuario {idUser: 7, nome: 'Valey Poole'}),
+(u8:Usuario {idUser: 8, nome: 'Robert Baratheon'}),
+(u9:Usuario {idUser: 9, nome: 'Tywin Lannister'}),
+(u10:Usuario {idUser: 10, nome: 'Tyrion Lannister'});
+
+CREATE
+(a1:Artista {idArtista: 1, nome: 'Twenty One Pilots'}),
+(a2:Artista {idArtista: 2, nome: 'Black Sabbath'}),
+(a3:Artista {idArtista: 3, nome: 'Mayhem'}),
+(a4:Artista {idArtista: 4, nome: 'Pitbull'}),
+(a5:Artista {idArtista: 5, nome: 'David Guetta'}),
+(a6:Artista {idArtista: 6, nome: 'Martin Garrix'}),
+(a7:Artista {idArtista: 7, nome: 'Rihanna'}),
+(a8:Artista {idArtista: 8, nome: 'Linkin Park'}),
+(a9:Artista {idArtista: 9, nome: 'Evanescence'}),
+(a10:Artista {idArtista: 10, nome: 'The Strokes'});
+
+CREATE
+(m1:Musica {idMusica: 1, nome: 'From the Inside'}),
+(m2:Musica {idMusica: 2, nome: 'Ride'}),
+(m3:Musica {idMusica: 3, nome: 'Animals'}),
+(m4:Musica {idMusica: 4, nome: 'Shot Me Down'}),
+(m5:Musica {idMusica: 5, nome: 'The Adults Are Talking'}),
+(m6:Musica {idMusica: 6, nome: 'Bring me to Life'}),
+(m7:Musica {idMusica: 7, nome: 'Iron Man'}),
+(m8:Musica {idMusica: 8, nome: 'Freezing Moon'}),
+(m9:Musica {idMusica: 9, nome: 'Timber'}),
+(m10:Musica {idMusica: 10, nome: 'Diamonds'});
+
+CREATE
+(g1:Genero {id: 1, nome: 'Rock'}),
+(g2:Genero {id: 2, nome: 'Pop'}),
+(g3:Genero {id: 3, nome: 'Indie'}),
+(g4:Genero {id: 4, nome: 'Eletronica'}),
+(g5:Genero {id: 5, nome: 'Heavy Metal'}),
+(g6:Genero {id: 6, nome: 'Country'});
