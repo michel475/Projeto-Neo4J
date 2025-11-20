@@ -1,17 +1,1 @@
-MATCH (u1:Usuario)-[a:OUVIU]->(m:Musica)<-[o:OUVIU]-(u2:Usuario)
-WHERE u1 <> u2
-WITH u1, u2, COUNT(m) AS comum
-MATCH (u1)-[:OUVIU]->(m1:Musica)
-WITH u1, u2, comum, COUNT(m1) AS total_user_1
 
-MATCH (u2)-[:OUVIU]->(m2:Musica)
-WITH u1, u2, comum, total_user_1, COUNT(m2) AS total_user_2
-WHERE (total_user_1 + total_user_2 - comum) > 0
-WITH u1, u2, total_user_1, total_user_2, toFloat(comum) AS comum, (total_user_1 + total_user_2 - comum) AS uniao
-
-WITH u1, u2, round((comum / uniao)*100)/100 AS pontuacao_jaccard
-WHERE pontuacao_jaccard >= 0.1
-MERGE (u1)-[p:PARECE]-(u2)
-ON CREATE SET p.pontuacao = pontuacao_jaccard
-ON MATCH SET p.pontuacao = pontuacao_jaccard
-RETURN u1.nome, u2.nome, p.pontuacao
