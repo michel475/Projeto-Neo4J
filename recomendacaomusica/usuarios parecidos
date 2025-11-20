@@ -1,0 +1,2 @@
+MATCH (u1:Usuario)-[p:PARECE]-(u2:Usuario)
+RETURN u1, p, u2
