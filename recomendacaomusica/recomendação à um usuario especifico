@@ -1,0 +1,6 @@
+MATCH (u1:Usuario {idUser: 5})-[p:PARECE]-(u2:Usuario)
+MATCH (u2)-[i:OUVIU]->(m:Musica)
+WHERE NOT (u1)-[:OUVIU]->(m)
+WITH m, SUM(p.pontuacao) AS pontos
+RETURN m, pontos
+ORDER BY pontos DESC
