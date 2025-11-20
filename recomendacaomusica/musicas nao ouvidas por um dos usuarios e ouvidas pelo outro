@@ -1,0 +1,4 @@
+MATCH (u1:Usuario)-[p:PARECE]-(u2:Usuario)
+MATCH (u2)-[i:OUVIU]->(m:Musica)
+WHERE NOT (u1)-[:OUVIU]->(m)
+RETURN u1, m
