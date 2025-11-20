@@ -1,0 +1,6 @@
+MATCH (p:Usuario)-[f:OUVIU]->(m:Musica)<-[o:OUVIU]-(p2:Usuario)
+MATCH (p)-[c:CURTIU]->(m)<-[c2:CURTIU]-(p2)
+WHERE p <> p2
+WITH p, p2, COUNT(DISTINCT m) AS comumcurtidaeouvida
+MERGE (p)-[l:PARECE]-(p2)
+SET l.pontuacao = comumcurtidaeouvida
