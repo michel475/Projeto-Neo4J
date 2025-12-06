@@ -1,0 +1,10 @@
+Key statement
+CYPHER 5 CREATE CONSTRAINT `id_Comunidade_uniq` IF NOT EXISTS
+FOR (n: `Comunidade`)
+REQUIRE (n.`id`) IS UNIQUE;
+Load statement
+CYPHER 5 UNWIND $nodeRecords AS nodeRecord
+WITH *
+WHERE NOT nodeRecord.`id` IN $idsToSkip AND NOT toInteger(trim(nodeRecord.`id`)) IS NULL
+MERGE (n: `Comunidade` { `id`: toInteger(trim(nodeRecord.`id`)) })
+SET n.`nome` = nodeRecord.`nome`;
