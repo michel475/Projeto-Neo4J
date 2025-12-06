@@ -2,6 +2,7 @@ MATCH (u:Usuario {nome: 'josh'})
 MATCH (d:data {data: '14/12/2025'})
 MERGE (u)-[p:LOGOU]->(d)
 
+//usuario participando comunidade
 match (u:Usuario)
 where u.id >= 8 and u.id <= 35
 with u, [ToInteger(rand()*6), ToInteger(rand()*6), ToInteger(rand()*6)] as comunidades
@@ -9,11 +10,12 @@ unwind comunidades as com
 match (c:Comunidade {id: com})
 merge (u)-[p:PARTICIPA]->(c)
 
+
+//usuario seguindo usuario
 match (u:Usuario)
 where u.id >= 8 and u.id <= 35
-match (d:data)
-where d.data >= '06/12/2025' and d.data <= '26/03/2026'
-with u, [ToInteger(rand()*6), ToInteger(rand()*6), ToInteger(rand()*6)] as comunidades
-unwind comunidades as com
-match (c:Comunidade {id: com})
-merge (u)-[p:PARTICIPA]->(c)
+with u, [ToInteger(rand()*35), ToInteger(rand()*35), ToInteger(rand()*35), ToInteger(rand()*35), ToInteger(rand()*35), ToInteger(rand()*35)] as segundo_user
+unwind segundo_user as seg
+match (u2:Usuario {id: seg})
+where u <> u2
+merge (u)-[p:SEGUE]-(u2)
