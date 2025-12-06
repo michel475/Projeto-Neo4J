@@ -41,3 +41,15 @@ call {
   merge (usuarioAleatorio)-[:COMENTOU]->(c)
   merge (c)-[:ESTA_EM]->(postAleatorio)
 } in transactions of 10 rows
+
+
+//cada usuario publicando um post
+match (u:Usuario)
+with collect(u) as todosUsuarios
+match (p:Post)
+where not (p)-[:PUBLICA]->()
+call {
+  with p, todosUsuarios
+  with p, apoc.coll.randomItem(todosUsuarios) as usuarioAleatorio
+  merge (usuarioAleatorio)-[:PUBLICA]->(p)
+} in transactions of 10 rows
