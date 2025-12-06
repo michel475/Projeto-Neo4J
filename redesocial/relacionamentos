@@ -15,3 +15,13 @@ unwind segundo_user as seg
 match (u2:Usuario {id: seg})
 where u <> u2
 merge (u)-[p:SEGUE]-(u2)
+
+
+//usuario curte post
+
+match (u:Usuario)
+where u.id >= 8 and u.id <= 35
+with u, [ToInteger(rand()*85), ToInteger(rand()*85)] as postagens
+unwind postagens as posts
+match (p:Post {id: posts})
+merge (u)-[c:CURTE]-(p)
