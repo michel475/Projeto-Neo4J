@@ -1,7 +1,3 @@
-MATCH (u:Usuario {nome: 'josh'})
-MATCH (d:data {data: '14/12/2025'})
-MERGE (u)-[p:LOGOU]->(d)
-
 //usuario participando comunidade
 match (u:Usuario)
 where u.id >= 8 and u.id <= 35
