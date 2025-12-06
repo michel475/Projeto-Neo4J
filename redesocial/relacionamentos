@@ -2,7 +2,18 @@ MATCH (u:Usuario {nome: 'josh'})
 MATCH (d:data {data: '14/12/2025'})
 MERGE (u)-[p:LOGOU]->(d)
 
-match (c:Comunidade)
-match (u:Usuario {nome: 'josh'})
-where c.id = toInteger(rand()*6)
+match (u:Usuario)
+where u.id >= 8 and u.id <= 35
+with u, [ToInteger(rand()*6), ToInteger(rand()*6), ToInteger(rand()*6)] as comunidades
+unwind comunidades as com
+match (c:Comunidade {id: com})
+merge (u)-[p:PARTICIPA]->(c)
+
+match (u:Usuario)
+where u.id >= 8 and u.id <= 35
+match (d:data)
+where d.data >= '06/12/2025' and d.data <= '26/03/2026'
+with u, [ToInteger(rand()*6), ToInteger(rand()*6), ToInteger(rand()*6)] as comunidades
+unwind comunidades as com
+match (c:Comunidade {id: com})
 merge (u)-[p:PARTICIPA]->(c)
