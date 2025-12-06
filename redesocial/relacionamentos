@@ -1,0 +1,8 @@
+MATCH (u:Usuario {nome: 'josh'})
+MATCH (d:data {data: '14/12/2025'})
+MERGE (u)-[p:LOGOU]->(d)
+
+match (c:Comunidade)
+match (u:Usuario {nome: 'josh'})
+where c.id = toInteger(rand()*6)
+merge (u)-[p:PARTICIPA]->(c)
