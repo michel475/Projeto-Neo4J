@@ -25,3 +25,19 @@ with u, [ToInteger(rand()*85), ToInteger(rand()*85)] as postagens
 unwind postagens as posts
 match (p:Post {id: posts})
 merge (u)-[c:CURTE]-(p)
+
+
+//cada usuario realizando um comentario
+match (u:Usuario)
+with collect(u) as todosUsuarios
+match (p:Post)
+with todosUsuarios, collect(p) as todosPosts
+match (c:Comentario)
+where not (c)-[:COMENTOU]->()
+call {
+  with c, todosUsuarios, todosPosts
+  with c, apoc.coll.randomItem(todosUsuarios) as usuarioAleatorio, todosPosts
+  with c, usuarioAleatorio, apoc.coll.randomItem(todosPosts) as postAleatorio
+  merge (usuarioAleatorio)-[:COMENTOU]->(c)
+  merge (c)-[:ESTA_EM]->(postAleatorio)
+} in transactions of 10 rows
