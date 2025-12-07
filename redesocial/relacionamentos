@@ -53,3 +53,16 @@ call {
   with p, apoc.coll.randomItem(todosUsuarios) as usuarioAleatorio
   merge (usuarioAleatorio)-[:PUBLICA]->(p)
 } in transactions of 10 rows
+
+
+//comunidade possui post
+
+match (c:Comunidade)
+with collect(c) as todasComunidades
+match (p:Post)
+where not (p)-[:POSSUI]->()
+call {
+  with p, todasComunidades
+  with p, apoc.coll.randomItem(todasComunidades) as comunidadeAleatoria
+  merge (comunidadeAleatoria)-[:POSSUI]->(p)
+} in transactions of 10 rows
