@@ -6,3 +6,24 @@ return u, s, u2
 
 match (u:Usuario)-[s:SEGUE]->(u2:Usuario {nome:'mikaelson'})
 return u, s, u2
+
+//usuario com maior numero de seguidores
+match (u:Usuario)<-[s:SEGUE]-()
+with u, count(s) as totalseguidores
+return u, totalseguidores
+order by totalseguidores desc
+limit 1
+
+//post mais curtido
+match (p:Post)<-[c:CURTE]-()
+with p, count(c) as totalcurtidas
+return p, totalcurtidas
+order by totalcurtidas desc
+limit 1
+
+//Comunidade mais seguida
+match(c:Comunidade)<-[p:PARTICIPA]-()
+with c, count(p) as totalparticipantes
+return c, totalparticipantes
+order by totalparticipantes DESC
+limit 1
