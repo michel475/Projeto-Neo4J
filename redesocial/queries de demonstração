@@ -1,0 +1,8 @@
+//Encontrando usuarios que são seguidos por um usuario especifico
+match (u:Usuario{nome: 'lil wayne'})-[s:SEGUE]->(u2:Usuario)
+return u, s, u2
+
+//Usuario especifico seguidos por usuários
+
+match (u:Usuario)-[s:SEGUE]->(u2:Usuario {nome:'mikaelson'})
+return u, s, u2
