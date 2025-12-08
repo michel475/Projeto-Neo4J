@@ -1,13 +1,15 @@
 //Encontrando usuarios que são seguidos por um usuario especifico
+profile
 match (u:Usuario{nome: 'lil wayne'})-[s:SEGUE]->(u2:Usuario)
 return u, s, u2
 
 //Usuario especifico seguidos por usuários
-
+profile
 match (u:Usuario)-[s:SEGUE]->(u2:Usuario {nome:'mikaelson'})
 return u, s, u2
 
 //usuario com maior numero de seguidores
+profile
 match (u:Usuario)<-[s:SEGUE]-()
 with u, count(s) as totalseguidores
 return u, totalseguidores
@@ -15,6 +17,7 @@ order by totalseguidores desc
 limit 1
 
 //post mais curtido
+profile
 match (p:Post)<-[c:CURTE]-()
 with p, count(c) as totalcurtidas
 return p, totalcurtidas
@@ -22,8 +25,45 @@ order by totalcurtidas desc
 limit 1
 
 //Comunidade mais seguida
+profile
 match(c:Comunidade)<-[p:PARTICIPA]-()
 with c, count(p) as totalparticipantes
 return c, totalparticipantes
 order by totalparticipantes DESC
+limit 1
+
+//Quantidade de comentarios por usuarios
+profile
+match (u:Usuario)-[c:COMENTOU]->()
+with u, count(c) as totalcomentarios
+return u.nome, totalcomentarios
+order by totalcomentarios desc
+
+//Usuario que mais comentou
+profile
+match (u:Usuario)-[c:COMENTOU]->()
+with u, count(c) as totalcomentarios
+return u.nome, totalcomentarios
+order by totalcomentarios desc
+limit 1
+
+//usuario especifico que nao segue os que são seguidos pelos que ele segue
+profile
+match (u:Usuario{nome:'mike'})-[s:SEGUE]-(u2:Usuario)
+match (u2)-[c:SEGUE]-(u3:Usuario)
+where not (u)-[:SEGUE]-(u3)
+return u3
+
+//seguidores de cada nó
+profile
+match (u:Usuario)-[s:SEGUE]-(u2:Usuario)
+return u, s, u2
+
+//numero de seguidores de cada usuario
+//usuario com maior numero de seguidores
+profile
+match (u:Usuario)<-[s:SEGUE]-()
+with u, count(s) as totalseguidores
+return u, totalseguidores
+order by totalseguidores desc
 limit 1
