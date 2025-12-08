@@ -1,0 +1,86 @@
+id,titulo,n_curtida,n_comentario
+1,cao da pradaria,0,0
+2,trabalhando com cypher,0,0
+3,como é o home office,0,0
+4,como conseguir uma vaga home-office,0,0
+5,dia na vida de um engenheiro de software,0,0
+6,aprendendo orientação a objetos com python,0,0
+7,bancos de dados nao relacionais e seu uso,0,0
+8,projeto iniciacao cientifica,0,0
+9,programação competitiva,0,0
+10,algoritmos como aprender,0,0
+11,boas praticas na escrita de codigo,0,0
+12,codigo limpo,0,0
+13,como fazer networking,0,0
+14,o que são estruturas de repeticao,0,0
+15,o que são condicionais na programação,0,0
+16,classificação de regras de negócio,0,0
+17,abordagens e boas praticas de eng. soft,0,0
+18,sistema de gestão de medicamentos,0,0
+19,sistema de controle de estoque para pequenos comercios,0,0
+20,analise preditiva do resultado da copa utilizando ml,0,0
+21,guia definitivo: como usar decorators em python para simplificar seu código.,0,0
+22,desvendando o typescript: por que ele se tornou essencial no front-end.,0,0
+23,"javascript assíncrono: dominando promises, async/await e event loop.",0,0
+24,o poder da composição vs. herança em programação orientada a objetos (poo).,0,0
+25,clean code: princípios solid aplicados em projetos reais.,0,0
+26,design patterns essenciais que todo desenvolvedor júnior precisa conhecer.,0,0
+27,"refatoração: o que é, quando e como aplicar para ter um código mais limpo.",0,0
+28,introdução ao rust: segurança e performance em um único ecossistema.,0,0
+29,aprendendo go (golang) do zero: por que ele é a escolha para microsserviços.,0,0
+30,testes unitários: como garantir a qualidade do seu código com pytest ou junit.,0,0
+31,devops para desenvolvedores: introdução a ci/cd com github actions.,0,0
+32,webassembly (wasm): o futuro da performance no navegador.,0,0
+33,microfrontends: arquitetura e estratégias de implementação.,0,0
+34,"frameworks full-stack em 2024: comparativo entre next.js, nuxt.js e sveltekit.",0,0
+35,introdução ao docker: o essencial para começar a conteinerizar seus aplicações.,0,0
+36,orquestração com kubernetes: guia passo a passo para iniciantes.,0,0
+37,"cloud computing: comparativo entre aws, azure e gcp.",0,0
+38,como proteger seus dados: boas práticas de cibersegurança para desenvolvedores.,0,0
+39,serverless computing: vantagens e desafios de rodar funções sem servidores.,0,0
+40,"monitoramento de aplicações: o que são logs, metrics e traces?",0,0
+41,infraestrutura como código (iac): automatizando com terraform.,0,0
+42,segurança de apis: o papel do oauth 2.0 e do jwt.,0,0
+43,"redes de computadores para devs: desmistificando http, dns e tcp/ip.",0,0
+44,firewall e vpn: entenda como funcionam e sua importância para o home office seguro.,0,0
+45,machine learning descomplicado: os 5 algoritmos fundamentais.,0,0
+46,deep learning: entendendo as redes neurais e suas aplicações.,0,0
+47,visão computacional: da teoria à prática com o opencv.,0,0
+48,processamento de linguagem natural (pln): como a ia entende a fala humana.,0,0
+49,análise preditiva para negócios: criando um modelo simples em python.,0,0
+50,o crescimento da ia generativa: o que mudou no desenvolvimento de software?,0,0
+51,ética e viés na inteligência artificial: o debate necessário.,0,0
+52,ferramentas de big data: introdução ao hadoop e spark.,0,0
+53,data visualization: como contar histórias com seus dados.,0,0
+54,estatística para data scientists: os conceitos que você precisa dominar.,0,0
+55,salários em tecnologia em 2025: pesquisa completa por cargo e região.,0,0
+56,transição de carreira para ti: guia completo para adultos.,0,0
+57,como fazer um portfólio de programador que impressiona.,0,0
+58,networking na área tech: estratégias para quem é introvertido.,0,0
+59,o desafio de ser líder técnico: habilidades e responsabilidades.,0,0
+60,burnout em home office: como a tecnologia pode ajudar a equilibrar o trabalho.,0,0
+61,entrevista técnica para engenheiro de software: o que estudar.,0,0
+62,dominando o linkedin: otimize seu perfil para vagas tech.,0,0
+63,metodologias ágeis além do scrum: conheça o kanban e o extreme programming (xp).,0,0
+64,como fazer uma apresentação técnica impactante.,0,0
+65,freelancer tech: como precificar seu trabalho e encontrar clientes.,0,0
+66,a importância da comunicação não-violenta em equipes de desenvolvimento.,0,0
+67,sql avançado: otimizando consultas com índices e views.,0,0
+68,modelagem de dados para sistemas de grande escala.,0,0
+69,bancos de dados orientados a grafos (graph databases): o que são e quando usar o cypher.,0,0
+70,mongodb vs. cassandra: escolhendo o nosql certo para seu projeto.,0,0
+71,transações acid: garantindo a integridade dos dados em sistemas distribuídos.,0,0
+72,caching: estratégias para aumentar a velocidade do acesso ao banco.,0,0
+73,migração de dados: desafios e boas práticas.,0,0
+74,"postgresql: além do básico, funções e extensões poderosas.",0,0
+75,"estruturas de dados essenciais para programação competitiva (árvores, grafos, tabelas hash).",0,0
+76,o caminho para se tornar um desenvolvedor de jogos indie.,0,0
+77,unity vs. unreal engine: qual motor gráfico escolher para seu projeto.,0,0
+78,otimização de algoritmos: reduzindo a complexidade o(n²) para o(log n).,0,0
+79,inteligência artificial em jogos: criando npcs mais realistas.,0,0
+80,o uso de python no desenvolvimento de protótipos de jogos.,0,0
+81,requisitos funcionais vs. não funcionais: classificando as regras de negócio.,0,0
+82,arquitetura orientada a eventos (eda): quando adotar e por quê.,0,0
+83,a iniciação científica como impulsionadora da carreira em engenharia de software.,0,0
+84,guia para criar um sistema de controle de estoque robusto (com crud e reports).,0,0
+85,"documentação de software (readme, swagger e adrs): boas práticas que não podem faltar.",0,0

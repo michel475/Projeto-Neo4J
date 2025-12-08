@@ -1,0 +1,125 @@
+id,conteudo,n_curtidas
+1,"muito interessante o conteudo, bem diferente do que há nessa rede",0
+2,uma abordagem muito importante para os programadores de hoje,0
+3,"nao sei como chegou nessa conclusão, mas discordo em partes",0
+4,"pode até ser comprovado, mas como seria melhor aplicado? pergunta sincera",0
+5,isso é aplicável em vários setores como o setor financeiro e de distribuição,0
+6,"tecnologia antiga, mas ainda muito requisitada no mercado",0
+7,"absurdo o cara postar uma coisa dessas, evidentemente nao entende nada do mercado de t.i atual",0
+8,que visão refrescante sobre o assunto! parabéns.,0
+9,achei o ponto sobre a escalabilidade muito pertinente.,0
+10,"excelente artigo, o autor conseguiu simplificar um tema complexo.",0
+11,"concordo plenamente com a análise, especialmente a parte final.",0
+12,fiquei com uma dúvida: qual o impacto disso em projetos legacy?,0
+13,adorei a didática! vou aplicar isso no meu próximo projeto.,0
+14,esse tipo de discussão é vital para o crescimento da comunidade.,0
+15,nunca tinha pensado por esse ângulo. muito obrigado por compartilhar.,0
+16,"a tese principal é forte, mas o exemplo prático poderia ser mais claro.",0
+17,qual seria o framework mais adequado para essa implementação?,0
+18,o futuro da tecnologia passa por abordagens como esta.,0
+19,um conteúdo de altíssima qualidade. salvando para reler depois.,0
+20,"discordo do ponto 3, me parece simplificar demais o problema.",0
+21,"já vi essa técnica falhar em deployments grandes, qual a garantia aqui?",0
+22,a aplicação em fintechs me parece a mais promissora.,0
+23,realmente mostra que o básico ainda é muito poderoso.,0
+24,o mercado está clamando por profissionais com essa mentalidade.,0
+25,parabéns pelo insight. mudou minha forma de encarar o desafio.,0
+26,pode me indicar uma fonte para aprofundar no tema?,0
+27,"relacionado a ""Clean Code"": o princípio solid mais difícil de aplicar, na minha experiência.",0
+28,"relacionado a ""Home Office"": o desafio do burnout é real, as dicas sobre equilíbrio são ótimas.",0
+29,"relacionado a ""Cypher/Graph Databases"": usar neo4j com cypher mudou meu data modeling.",0
+30,"relacionado a ""POO"": a composição é subestimada, o foco em herança já cansou.",0
+31,"relacionado a ""Docker/K8s"": sem docker e kubernetes, essa arquitetura seria inviável.",0
+32,"relacionado a ""Análise Preditiva"": será que esse modelo sobreviveria a um cenário de cisnes negros?",0
+33,"relacionado a ""Rust/Go"": a performance do rust realmente compensa a curva de aprendizado?",0
+34,"relacionado a ""Redes"": muitos desenvolvedores ignoram o tcp/ip e isso cobra seu preço.",0
+35,"relacionado a ""Frontend"": webassembly é a próxima grande revolução da web.",0
+36,"relacionado a ""Carreira/Salários"": a pesquisa de salários em 2025 está bem otimista!",0
+37,"relacionado a ""PLN/IA"": o avanço do pln é o que mais me anima na ia generativa.",0
+38,"relacionado a ""Programação Competitiva"": estruturas de dados são o alicerce de tudo.",0
+39,"relacionado a ""Testes Unitários"": a falta de testes é o que mais encarece a refatoração.",0
+40,"relacionado a ""Segurança de APIs"": sem oauth e jwt, a api é um alvo fácil.",0
+41,"relacionado a ""DevOps"": ci/cd virou obrigação, não um diferencial.",0
+42,"relacionado a ""Freelancer"": precificar é sempre o maior mistério!",0
+43,"relacionado a ""Metodologias Ágeis"": kanban é muito mais flexível que scrum para pequenas equipes.",0
+44,"relacionado a ""Data Visualization"": uma boa visualização vale mil linhas de dados.",0
+45,"relacionado a ""SQL/NoSQL"": o duelo entre mongodb e cassandra nunca termina.",0
+46,"qual a complexidade o desse algoritmo, na prática?",0
+47,a comunidade de open source se beneficiaria muito dessa solução.,0
+48,parabéns por trazer essa discussão à luz.,0
+49,o ponto de vista oposto também merece atenção.,0
+50,o case que você citou é o melhor exemplo de aplicabilidade.,0
+51,essa é a definição de senioridade.,0
+52,como podemos medir o roi dessa implementação?,0
+53,isso não seria um over-engineering para projetos pequenos?,0
+54,a fonte que você usou é confiável? preciso verificar.,0
+55,ótimo para quem está começando na área.,0
+56,o mercado e-commerce precisa urgentemente desse tipo de solução.,0
+57,a usabilidade é um fator crucial que não foi mencionado.,0
+58,faltou um pouco sobre a manutenção a longo prazo.,0
+59,concordo que a curva de aprendizado vale a pena.,0
+60,acho arriscado basear a conclusão em apenas um estudo de caso.,0
+61,a experiência do usuário deve ser a prioridade.,0
+62,qual o papel da arquitetura hexagonal nisso tudo?,0
+63,essa ideia pode ser aplicada em iot?,0
+64,a adoção dessa prática é mais lenta do que deveria.,0
+65,um conteúdo raro de se ver com tanta profundidade.,0
+66,"o conceito é simples, mas a execução é o grande desafio.",0
+67,"muito bom, mas e se o volume de dados for massivo?",0
+68,isso me fez lembrar da importância das soft skills.,0
+69,essa discussão deveria estar nos currículos universitários.,0
+70,o exemplo com python é super prático!,0
+71,o argumento da segurança é inquestionável.,0
+72,o que você sugere para quem está migrando de carreira?,0
+73,o futuro da engenharia de software está aqui.,0
+74,será que não estamos superestimando essa tecnologia?,0
+75,essa é a melhor explicação que já li sobre eda.,0
+76,o roadmap para dominar esse tema parece assustador.,0
+77,a iniciação científica realmente faz a diferença na base.,0
+78,o controle de estoque é um problema clássico bem resolvido aqui.,0
+79,"a refatoração é uma arte, não apenas uma tarefa.",0
+80,a diferença entre sênior e pleno está nesse tipo de detalhe.,0
+81,o problema é que muitas empresas ainda não investem nisso.,0
+82,como lidar com o legacy sem quebrar a produção?,0
+83,esse tipo de documentação é ouro puro para novos devs.,0
+84,a visão computacional está mudando o varejo.,0
+85,deep learning ainda é um bicho de sete cabeças para mim.,0
+86,qual a melhor forma de estudar big data hoje?,0
+87,data visualization ajuda muito a vender a ideia para a gestão.,0
+88,a ética na ia é um ponto que precisa ser debatido sempre.,0
+89,a comunicação não-violenta é essencial para evitar conflitos em equipe.,0
+90,o graphql seria uma alternativa melhor para essa api?,0
+91,"relacionado a ""Algoritmos"": a otimização de o(n²) para o(log n) é sempre satisfatória.",0
+92,a performance do go em microsserviços é incomparável.,0
+93,"relacionado a ""TypeScript"": o typescript realmente salvou o javascript.",0
+94,"relacionado a ""Full-Stack"": next.js ainda domina o mercado full-stack.",0
+95,"relacionado a ""Transações ACID"": a integridade dos dados é o que mais importa no fim.",0
+96,esse post merece ser compartilhado em todas as comunidades.,0
+97,"um tópico tão importante, mas tão pouco explorado.",0
+98,aws continua sendo o líder incontestável em cloud.,0
+99,o serverless reduz muito o custo operacional.,0
+100,qual a ferramenta de monitoring que você recomenda?,0
+101,"relacionado a ""IA em Jogos"": criar npcs realistas é o futuro dos rpgs.",0
+102,"unity é mais acessível para indies, mas unreal tem poder gráfico superior.",0
+103,essa discussão sobre regras de negócio é a base do b.a..,0
+104,a ausência de testes unitários é a causa raiz de muitos bugs.,0
+105,o event loop do javascript é sempre um nó na cabeça.,0
+106,terraform simplifica muito a vida de devops.,0
+107,o networking sempre foi um desafio para devs.,0
+108,o equilíbrio entre vida pessoal e home office é delicado.,0
+109,essa é a chave para o crescimento profissional.,0
+110,o mercado junior precisa desse tipo de conteúdo.,0
+111,postgresql é o canivete suíço dos bancos de dados relacionais.,0
+112,a modelagem de dados é a etapa mais crítica.,0
+113,o caching é um salvador de performance.,0
+114,a migração é sempre o momento de maior risco.,0
+115,o uso de view models pode melhorar essa abordagem.,0
+116,a importância das condicionais e repetições na base.,0
+117,o conhecimento de webassembly é um diferencial gigante.,0
+118,"a cibersegurança deve ser default, não feature.",0
+119,freelancer precisa ser full-stack em habilidades.,0
+120,muito bom. qual a próxima tendência após essa?,0
+121,esse conteúdo foi cirúrgico na minha necessidade atual.,0
+122,faltou um alerta sobre os custos de cloud nesse modelo.,0
+123,"relacionado a ""Visão Computacional"": como o opencv lida com diferentes iluminações?",0
+124,uma leitura obrigatória para qualquer um na área.,0
