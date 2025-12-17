@@ -1,0 +1,6 @@
+//Personagens de Star Wars
+
+//personagens não humanos
+match (n:Pessoa)
+where n.species <> 'Human'
+return n
