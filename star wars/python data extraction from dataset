@@ -7,5 +7,12 @@ planetas.to_csv('planetas.csv')
 print(planetas)
 
 
+//personagens humanos
+import pandas as pd
+
+p = pd.read_csv('personagens.csv')
+
+humanos = p.loc[(p.species == 'Human')]
+print(humanos)
 
 
