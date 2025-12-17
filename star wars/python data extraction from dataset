@@ -1,0 +1,11 @@
+import pandas as pd
+//lendo o csv
+a = pd.read_csv("star_wars_character_dataset.csv")
+//extraindo homeworld das tuplas e criando um csv
+planetas = a.homeworld
+planetas.to_csv('planetas.csv')
+print(planetas)
+
+
+
+
