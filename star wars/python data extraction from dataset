@@ -14,7 +14,3 @@ p = pd.read_csv('personagens.csv')
 
 humanos = p.loc[(p.species == 'Human')]
 print(humanos)
-
-
-
-
